@@ -1,19 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&family=Kanit:wght@800&display=swap');
+
 :root {
-  --color-background: #ffffff;
-  --color-highlight: #ffcc0f;
-  --color-light: #ffb9fe;
-  --color-medium: #9e3293;
-  --color-dark: #132400;
-  --page-width: 800px;
-  --small-width: 600px;
+	--color-background: #ffffff;
+	--color-highlight: #ffcc0f;
+	--color-light: #ff97f5;
+	--color-medium: #d231c2;
+	--color-medium-dark: #5d21dc;
+	--color-dark: #272727;
+	--page-width: 800px;
+	--small-width: 600px;
 }
 
 html, body {
-  height: 100%;
+    height: 100%;
+    font-family: "Libre Franklin", helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-rendering: optimizeLegibility;
+    text-rendering: optimizeLegibility;
 }
 
 body {
-	font-family: helvetica;
 	font-size: 100%;
 	background-color: var(--color-background);
 	color: var(--color-dark);
@@ -31,22 +37,42 @@ body {
 .nav {
 	justify-content: center;
 }
+.sidebar-nav {
+    margin-top: 20px;
+    padding: 0;
+    list-style: none;
+}
 .footer {
 	flex-shrink: 0;
 	font-size: 80%;
-}
+} 
 
 h1 {
-	font-family: courier;
-	text-align: center;
+	/*display: flex;*/
+	font-family: "Kanit", "Libre Franklin", helvetica, sans-serif;
 	text-decoration: bold;
-	color: var(--color-medium);
+	text-align: center;
+	font-size: 72px;
+	background: -webkit-linear-gradient(60deg, var(--color-medium-dark) 30%, var(--color-medium) , var(--color-highlight) 70%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	user-select: none;
 }
 
 nav {
+	padding: 5px 0px 5px 0px;
+	background-color: var(--color-dark);
 	color: var(--color-dark);
-	background-color: var(--color-light);
-	padding: 0px 5px 0px 5px;
+}
+.nav a:link, a:visited {
+	color: var(--color-background);
+	background-color: transparent;
+	text-decoration: none;
+}
+.nav a:hover {
+	color: var(--color-background);
+	background-color: var(--color-medium-dark);
+	text-decoration: none;
 }
 
 p {
@@ -65,12 +91,12 @@ img {
 }
 
 a:link, a:visited {
-  color: var(--color-medium);
-  background-color: transparent;
-  text-decoration: underline;
+	color: var(--color-medium);
+	background-color: transparent;
+	text-decoration: underline;
 }
 a:hover {
-  color: var(--color-dark);
-  background-color: var(--color-highlight);
-  text-decoration: none;
+	color: var(--color-dark);
+	background-color: var(--color-highlight);
+	text-decoration: none;
 }
