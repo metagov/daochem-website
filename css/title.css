@@ -2,10 +2,10 @@
 
 :root {
 	--color-background: #ffffff;
-	--color-highlight: #ffcc0f;
-	--color-light: #ff97f5;
-	--color-medium: #d231c2;
-	--color-medium-dark: #5d21dc;
+	--color-highlight: #ffd025;
+	--color-light: #fff9a6;
+	--color-medium: #8ae73e;
+	--color-medium-dark: #008383;
 	--color-dark: #272727;
 	--page-width: 800px;
 	--small-width: 600px;
@@ -48,21 +48,28 @@ body {
 } 
 
 h1 {
-	/*display: flex;*/
+	display: inline-block; /* Used to keep the gradient from shifting with screen width */
 	font-family: "Kanit", "Libre Franklin", helvetica, sans-serif;
 	text-decoration: bold;
 	text-align: center;
-	font-size: 72px;
-	background: -webkit-linear-gradient(60deg, var(--color-medium-dark) 30%, var(--color-medium) , var(--color-highlight) 70%);
+	font-size: 500%;
+	background: -webkit-linear-gradient(60deg, var(--color-medium-dark) 10%, var(--color-medium) , var(--color-light) 90%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	user-select: none;
+	/* The following three commands center the inline-block*/
+	position: relative;
+	left: 50%; 
+	transform: translateX(-50%);
 }
 
 nav {
-	padding: 5px 0px 5px 0px;
+	padding: 5px;
+	border-radius: 25px;
+	font-family: "Kanit", "Libre Franklin", helvetica, sans-serif;
 	background-color: var(--color-dark);
-	color: var(--color-dark);
+	color: var(--color-background);
+	text-align: center;
 }
 .nav a:link, a:visited {
 	color: var(--color-background);
@@ -71,7 +78,9 @@ nav {
 }
 .nav a:hover {
 	color: var(--color-background);
-	background-color: var(--color-medium-dark);
+	background: -webkit-linear-gradient(60deg, var(--color-medium) , var(--color-light));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 	text-decoration: none;
 }
 
