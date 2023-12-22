@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="en-US">
-	
+
 <head>
 
 <title>DAOchem</title>
-<link rel="stylesheet" href="css/title.css">
+
+
+<link rel="stylesheet" href="css/daochem.css">
+<link rel="stylesheet" href="css/daochem.css">
+<link rel="shortcut icon" type="image/png" href="https://daochem.nyc3.digitaloceanspaces.com/daochem.png"/>
 <meta name="description" content="DAOchem">
 <meta name="author" content="DAOchem">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,17 +22,63 @@
 </header>
 
 <nav class="nav">
-	<a href="https://github.com/notchia/daochem-backend/"><b>github</b></a>
+	<a href="/">home</a>
 	&nbsp;&nbsp;
-	<a href="https://metagov.org/"><b>metagov</b></a>
+	<a href="/factories">dao factories</a>
+	&nbsp;&nbsp;
+	<a href="/twitter">dao tweets</a>
+	&nbsp;&nbsp;
+	<a href="/sentiment">dao sentiment</a>
+	&nbsp;&nbsp;
+	<a href="/about">about</a>
 </nav>
 
 <main class="content">
-	<p><b>DAOchem</b> is a solution in which on- and off-chain governance data sources react to produce a holistic view of DAO governance. We integrate data on <b>smart contract parameters</b>, <b>voting activity</b>, <b>Twitter activity</b>, and <b>contributor sentiment</b> to help DAO creators, contributors and researchers understand the governance landscape.</p>
+	
+<p><b>DAOchem</b> is a mixture of on- and off-chain governance data sources which react to 
+produce a holistic view of DAO governance. We are working to integrate data on 
+<b>smart contract parameters</b>, <b>voting activity</b>, <b>Twitter activity</b>, and 
+<b>contributor sentiment</b> to help DAO creators, contributors and researchers understand 
+the governance landscape.</p>
+
+<p>
+An overarching question driving our work is: are DAOs "working" right now? 
+Are they what they say they are? Are they achieving their stated goals? How do DAO contributors 
+feel about their experiences? To answer these questions, we're less interested in the 
+nitty-gritty operational details specific to each DAO and more in patterns of governance 
+structures and behaviors that might be observed across DAOs. In particular:
+<ul>
+  <li>What governance systems are DAO founders choosing to implement, with what "laws"?</li>
+  <li>In what (measurable) ways are DAO members participating in governance? Does DAO member activity relate to the chosen systems?</li>
+  <li>How satisfied are DAO members with their own experiences and with the health/success of the DAO overall? How do these experiences relate to the chosen systems?</li>
+</ul>
+We are creating new datasets from a variety of sources to help us investigate:
+<ul>
+  <li>The transaction histories of the "factory" smart contracts of governance frameworks like Aragon and DAOstack, and those of the DAO governance contracts they create</li>
+  <li>Governance-related communications to the general public through Twitter </li>
+  <li>A short survey to assess DAO contributor sentiment</li>
+</ul>
+</p>
+
+<p>This database and website is a work in progress! Currently, the database has the 
+  following record counts:</p>
+<ul>
+  <li><strong>Factories:</strong> 7</li>
+  <li><strong>Factory transactions (roughly, daos created):</strong> 2463</li>
+  <li><strong>Other transactions (roughly, dao activity):</strong> 15641</li>
+  <li><strong>DAO Twitter accounts:</strong> 105</li>
+  <li><strong>DAO tweets:</strong> 45170</li>
+  <li><strong>Survey responses:</strong> 190</li>
+</ul>
+
 </main>
 
 <footer class="footer">
-	<p>Find the source for this website on <a href="https://github.com/notchia/daochem-frontend"><b>github</b></a></p>
+	<p>For further information, check out: </p>
+	<ul>
+		<li><a href="https://github.com/notchia/daochem"><b>the project on github</b></a>
+		<li><a href="https://metagov.org/"><b>our parent organization, metagov</b></a>
+	  </ul>
 </footer>
 
 </body>
