@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+
+<title>DAOchem</title>
+
+
+<link rel="stylesheet" href="css/daochem.css">
+<link rel="stylesheet" href="css/daochem.css">
+<link rel="shortcut icon" type="image/png" href="https://daochem.nyc3.digitaloceanspaces.com/daochem.png"/>
+<meta name="description" content="DAOchem">
+<meta name="author" content="DAOchem">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body> 
+
+<header>
+	<h1>DAOchem</h1>
+</header>
+
+<nav class="nav">
+	<a href="/">home</a>
+	&nbsp;&nbsp;
+	<a href="/factories">dao factories</a>
+	&nbsp;&nbsp;
+	<a href="/twitter">dao tweets</a>
+	&nbsp;&nbsp;
+	<a href="/sentiment">dao sentiment</a>
+	&nbsp;&nbsp;
+	<a href="/about">about</a>
+</nav>
+
+<main class="content">
+	
+<p>
+Twitter is a common method by which a DAO's leadership or spokesperson communicates 
+with both the DAO's members and contributors and with its broader community of, for 
+example, protocol users. We are interested in understanding how DAOs are using Twitter 
+to communicate about their governance. 
+</p>
+
+<p>
+We identify governance-related tweets by searching the tokenized text for keywords 
+related to voting ("vote(s)", "voter(s)", "voting"), proposals (propose", "proposal(s)"), 
+decisionmaking ("decide", "decision", "decisionmaking", "decision-making"), and 
+budgeting ("treasury", "budget"), as well as the words "governance" and "forum". 
+</p>
+
+<p>
+Using the <a href="https://developer.twitter.com/en/docs/twitter-api">Twitter API</a> 
+via <a href="https://www.tweepy.org/">Tweepy</a>, we have collected 45170 
+tweets, ranging back several years, from the 105 DAOs which have at 
+least 100 available tweets (first-order only: not retweets, 
+not replies). Of these, we have identified 5137 as relating 
+to governance. 
+</p>
+
+<strong>Governance-related tweets per DAO, as a percentage of total tweets:</strong>
+<ul>
+  <li><strong>Mean:</strong> 11.36%</li>
+  <li><strong>Median:</strong> 8.7%</li>
+  <li><strong>Min:</strong> 0.3%</li>
+  <li><strong>Max:</strong> 60.7%</li>
+</ul>
+<strong>Median governance topic frequency per DAOs, as a percentage of governance-related tweets:</strong>
+<ul>
+  
+  <li><strong>decide:</strong> 2.4% (range: 0.0-100.0%) </li>
+  
+  <li><strong>forum:</strong> 2.2% (range: 0.0-100.0%) </li>
+  
+  <li><strong>governance:</strong> 22.0% (range: 0.0-100.0%) </li>
+  
+  <li><strong>propose:</strong> 26.7% (range: 0.0-88.9%) </li>
+  
+  <li><strong>treasury:</strong> 7.7% (range: 0.0-70.0%) </li>
+  
+  <li><strong>vote:</strong> 43.7% (range: 0.0-100.0%) </li>
+  
+</ul>
+
+</main>
+
+<footer class="footer">
+	<p>For further information, check out: </p>
+	<ul>
+		<li><a href="https://github.com/notchia/daochem"><b>the project on github</b></a>
+		<li><a href="https://metagov.org/"><b>our parent organization, metagov</b></a>
+	  </ul>
+</footer>
+
+</body>
+
+</html>
